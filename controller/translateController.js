@@ -1,5 +1,6 @@
 const translateService = require("../service/translateService");
 
+//=======================================
 const translateController = (result) => {
 	translateService.translateService(result, (fResp) => {
 		if(fResp.err !== undefined){
@@ -12,7 +13,7 @@ const translateController = (result) => {
 	});
 }
 
-//================================================================
+//=======================================
 module.exports = {
     translateController
 };

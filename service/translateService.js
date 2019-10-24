@@ -4,9 +4,9 @@ AWS.config.update({ region: 'eu-west-1' });
 AWS.config.apiVersions = { s3: '2006-03-01' };
 
 var translate = new AWS.Translate();
-
 const fResponse = require("../common/functionResponse");
 
+//=======================================
 const translateService = (result, fnCallback) => {
 
     var fResp = new functionResponse("translate", [result, fnCallback]);
