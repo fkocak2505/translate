@@ -4,7 +4,7 @@ var app = express()
 const API_VERSION = "0.0.1"
 
 app.get('/api/public', (req, res) => {
-    res.json({ message: "Hello Server" })
+    res.json({ message: "Welcome to WiTransalate Server..." })
 })
 
 var port = process.env.PORT || 3010
