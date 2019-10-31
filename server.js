@@ -13,7 +13,6 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
 //=======================================
 app.post('/api/translate', (req, res) => {
-    //res.json({ message: "Welcome to WiTransalate Server..." })
     var result = { data: { data: 0 }, req: req, res: res };
     translateController.translateController(result);
 })
